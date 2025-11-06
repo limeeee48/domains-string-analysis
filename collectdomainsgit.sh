@@ -1,7 +1,5 @@
 #!/bin/bash
-#grep -E -o "https?://[A-Za-z0-9_]+\.[a-zA-Z]{,2}(/[a-zA-Z0-9]+)";\
-#grep -E -o "[A-Za-z0-9_]+\.(com|org|net)";\ 
-#grep -E -o "https?://(www\.)?[A-Za-z0-9_]+\.(com|org|net)(/[0-9A-Za-z/_]+)?"
+
 #Author : Limeeee48
 #poC
 
@@ -44,7 +42,6 @@ else
 		strings $1 > $tmpfile 
 		cat $tmpfile | grep -Eo $first_url  > $domains
 		if [ -n "$(cat $domains)" ] ; then 
-			#echo -e "${BoldWhite}============Domains============\n${EndLine}"
 			cat $domains | sort -u
 			rm -rf $tmpfile $domains
 		else 
