@@ -42,7 +42,7 @@ else
 		tmpfile=$(mktemp)  
 		domains=$(mktemp)
 		strings $1 > $tmpfile 
-		cat $tmpfile | grep -E $first_url -o > $domains
+		cat $tmpfile | grep -Eo $first_url  > $domains
 		if [ -n "$(cat $domains)" ] ; then 
 			#echo -e "${BoldWhite}============Domains============\n${EndLine}"
 			cat $domains | sort -u
