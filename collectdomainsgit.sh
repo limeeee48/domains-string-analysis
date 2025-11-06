@@ -8,7 +8,6 @@ EndLine="\e[0m"
 sucessColor="\e[32m"
 ErrorColor="\e[31m"
 first_url="(https?://)?(www\.)?[A-Za-z0-9_]+\.(com|net|org|gov)(/[0-9A-Za-z/_]+)?"
-#first_url="https?://(www\.)?[A-Za-z0-9_]+\.(com|net|org|gov)(/[0-9A-Za-z/_]+)?"
 dll_="^[a-zA-Z0-9_]+\.dll$"
 banner()
 {
